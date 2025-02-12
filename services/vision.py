@@ -21,7 +21,7 @@ class Vision:
         self.client = image_analytics_client
 
 
-
+    # Function to analyze an image from a URL
     def image_analysis_from_url(self, image_url=None):
         result = self.client.analyze_from_url(
             image_url=image_url, # type: ignore
@@ -48,7 +48,7 @@ class Vision:
         '''
         return str(summary)
     
-
+    # Function to analyze an image from a URL with OCR
     def image_analysis_OCR_from_url(self, image_url=None):
             result = self.client.analyze_from_url(
                 image_url=image_url, # type: ignore
