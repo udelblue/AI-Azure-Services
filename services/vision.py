@@ -49,6 +49,7 @@ class Vision:
         return str(summary)
     
     # Function to analyze an image from a URL with OCR
+    # updates
     def image_analysis_OCR_from_url(self, image_url=None):
             result = self.client.analyze_from_url(
                 image_url=image_url, # type: ignore
