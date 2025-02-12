@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
+<head>
+  <title>Azure - Entity Linking</title>
+  <link rel="stylesheet" href="{{ url_for('static', path='bootstrap/css/bootstrap.min.css') }}">
+  <link rel="shortcut icon" href="{{ url_for('static', path='favicon.ico') }}">
+</head>
+<html>
+
+<body>
+  <main>
+    <div class="px-4 py-3 my-2 text-center">
+
+      <h1 class="display-6 fw-bold text-primary">Entity Linking</h1>
+    </div>
+    <form method="post" action="{{ url_for('extract_key_phrases')}}">
+      <div class="col-md-6 mx-auto text-center">
+        <label for="name" class="form-label fw-bold fs-5">Enter the text you wish to analize</label>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center align-items-center my-1">
+          <textarea class="form-control"  id="name" name="name" rows="5"></textarea>
+
+        </div>
+        <div class="d-grid gap-2 px-6 d-sm-flex justify-content-sm-center my-2">
+          <button type="submit" class="btn btn-primary btn-lg  gap-3">Process</button>
+        </div>
+      </div>
+    </form>
+    <div class="container">
+    <div class="col-md-12 pt-4 mx-auto">
+
+      <div class="col-md-8 mx-auto">
+        <span style="white-space: pre-line">
+        {{ original_post }}
+      </span>
+      </div>
+      
+
+    <div class="col-md-8 mx-auto">
+      <span style="white-space: pre-line">
+      {{ summerization }}
+    </span>
+    </div>
+  
+    <div class="row">
+      <div class="text-end">
+        <a href="{{ url_for('index') }}" class="btn btn-primary btn-md ">Back home</a>
+      </div>
+    </div>
+   
+ 
+
+    </div>
+  </div>
+
+  </main>
+</body>
+
+</html>

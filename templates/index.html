@@ -3,7 +3,7 @@
 <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 
 <head>
-  <title>Hello Azure - Python Quickstart</title>
+  <title>Azure - AI examples</title>
   <link rel="stylesheet" href="{{ url_for('static', path='bootstrap/css/bootstrap.min.css') }}">
   <link rel="shortcut icon" href="{{ url_for('static', path='favicon.ico') }}">
 </head>
@@ -11,22 +11,40 @@
 
 <body>
   <main>
-    <div class="px-4 py-3 my-2 text-center">
+    <div class="px-4 py-2 my-2 text-center">
       <img class="d-block mx-auto mb-4" src="{{ url_for('static', path='images/azure-icon.svg') }}" alt="Azure Logo"
         width="192" height="192" />
-      <h1 class="display-6 fw-bold text-primary">Welcome to Azure</h1>
+      <h4 class="display-6 fw-bold text-primary">Azure AI services examples</h4>
     </div>
-    <form method="post" action="{{ url_for('hello')}}">
-      <div class="col-md-6 mx-auto text-center">
-        <label for="name" class="form-label fw-bold fs-5">Could you please tell me your name?</label>
-        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center align-items-center my-1">
-          <input type="text" class="form-control" id="name" name="name" style="max-width: 256px;">
-        </div>
-        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center my-2">
-          <button type="submit" class="btn btn-primary btn-lg px-4 gap-3">Say Hello</button>
-        </div>
-      </div>
-    </form>
+
+
+    <div class="px-1 py-1  text-center">
+      <a href="sentiment_analyze">Sentiment analyze with opinion mining</a>
+      <p>Determine the sentiment and opinions expressed in text.</p>
+    </div>
+    <div class="px-1 py-1  text-center">
+      <a href="summerization">Summerization of text</a>
+      <p>Summarize long chunks of text or conversations.</p>
+    </div>
+    <div class="px-1 py-1  text-center">
+      <a href="extract_key_phrases">Extract key phrases</a>
+      <p>Extract main topics and important phrases.</p>
+    </div>
+    <div class="px-1 py-1  text-center">
+      <a href="entity_recognition">Entity Recognition</a>
+      <p>Entity Recognition can identify and categorize entities in text.</p>
+    </div>
+    <div class="px-1 py-1  text-center">
+      <a href="image_analysis">Image Analysis</a>
+      <p>Extract a wide variety of visual features from your images.</p>
+    </div>
+    
+    <div class="px-1 py-1  text-center">
+      <a href="image_analysis_OCR">Image Analysis OCR</a>
+      <p>Extract text from your images.</p>
+    </div>
+
+
   </main>
 </body>
 

@@ -1,22 +1,20 @@
+
+![Screenshot](https://github.com/udelblue/AI-Azure-Services/blob/main/images/Screenshot.png)
+
 ---
-page_type: sample
-description: "A minimal sample app that can be used to demonstrate deploying FastAPI apps to Azure App Service."
+page_type: example
+description: "A example app that can be used to demonstrate Azure AI Services."
 languages:
 - python
 products:
 - azure
-- azure-app-service
+- azure-ai
 ---
 
-# Deploy a Python (FastAPI) web app to Azure App Service - Sample Application
+# Deploy a Python (FastAPI) web app to Azure App Service 
 
-This is the sample FastAPI application for the Azure Quickstart [Deploy a Python (Django, Flask or FastAPI) web app to Azure App Service](https://docs.microsoft.com/en-us/azure/app-service/quickstart-python). For instructions on how to create the Azure resources and deploy the application to Azure, refer to the Quickstart article.
+This is example app of FastAPI application for the Azure AI services. You will need to create a .env and fill in the necessary properties prior to local and azure deployment. 
 
-Sample applications are available for the other frameworks here:
-- Django [https://github.com/Azure-Samples/msdocs-python-django-webapp-quickstart](https://github.com/Azure-Samples/msdocs-python-django-webapp-quickstart)
-- Flask [https://github.com/Azure-Samples/msdocs-python-flask-webapp-quickstart](https://github.com/Azure-Samples/msdocs-python-flask-webapp-quickstart)
-
-If you need an Azure account, you can [create one for free](https://azure.microsoft.com/en-us/free/).
 
 ## Local Testing
 
@@ -34,6 +32,10 @@ To try the application on your local machine:
 
 http://127.0.0.1:8000/
 
-## Next Steps
+## Deploy to Azure infrastucture 
 
-To learn more about FastAPI, see [FastAPI](https://fastapi.tiangolo.com/).
+`azd up`
+
+## Deploy app to Azure 
+
+`azd deploy`

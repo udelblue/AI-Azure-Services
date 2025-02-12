@@ -1,4 +1,11 @@
-fastapi
-uvicorn
-jinja2
-python-multipart
+fastapi==0.115.8
+uvicorn==0.34.0
+Jinja2==3.1.5
+python-multipart==0.0.20
+python-dotenv==1.0.1
+azure-ai-textanalytics==5.3.0
+azure-storage-blob==12.24.1
+uuid==1.30
+DateTime==5.5
+timedelta==2020.12.3
+azure-ai-vision-imageanalysis==1.0.0
